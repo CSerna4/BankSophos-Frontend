@@ -1,0 +1,31 @@
+<h2>Lista Empleados</h2>
+<table class="table table-striped"> 
+    <thead class="table-dark">
+        <tr>
+            <th>Client ID</th>
+            <th>Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Birth Date</th>
+            <th>ID Type</th>
+            <th>ID Number</th>
+            <th>Creation Date</th>
+            <th>Creation User</th>
+            <th>Modify User</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let client of clients">
+            <th>{{client.clientID}}</th>
+            <th>{{client.name}}</th>
+            <th>{{client.lastName}}</th>
+            <th>{{client.email}}</th>
+            <th>{{client.birthDate}}</th>
+            <th>{{client.idType}}</th>
+            <th>{{client.idNumber}}</th>
+            <th>{{client.creationDate}}</th>
+            <th>{{client.creationUser}}</th>
+            <th>{{client.modifyUser}}</th>
+        </tr>
+    </tbody>
+</table>
